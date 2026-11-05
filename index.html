@@ -665,6 +665,33 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 @keyframes florFloat{0%{translate:0 0;rotate:-2.5deg}100%{translate:0 -11px;rotate:2.5deg}}
 .cd2-container,.rsvp-card{overflow:visible!important}
 
+
+/* ===== Disco de vinilo premium con aguja ===== */
+.vinyl-btn{position:fixed!important;left:max(10px,calc(50vw - 215px + 10px))!important;right:auto!important;bottom:max(14px,env(safe-area-inset-bottom))!important;
+  width:96px!important;height:84px!important;border-radius:0!important;background:none!important;box-shadow:none!important;padding:0!important;border:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.vinyl-btn::after,.vinyl-btn::before{display:none!important}
+.vinyl-btn:hover{transform:none!important}
+.vinyl-btn .vd{position:absolute;left:0;bottom:0;width:76px;height:76px;border-radius:50%;
+  box-shadow:0 0 0 1.5px rgba(194,164,106,.9),0 8px 20px rgba(40,28,20,.38),0 2px 5px rgba(0,0,0,.35)}
+.vinyl-btn .vd-spin{position:absolute;inset:0;border-radius:50%;
+  background:
+   radial-gradient(circle,transparent 0 33%,rgba(0,0,0,.55) 33.4%,transparent 34.4%),
+   repeating-radial-gradient(circle,rgba(255,255,255,0) 0 1.5px,rgba(255,255,255,.055) 1.6px 2.1px),
+   radial-gradient(circle,#2a201c 0 38%,#120d0b 70%,#241a16 100%)}
+.vinyl-btn.is-playing .vd-spin{animation:vinylSpin 2.4s linear infinite}
+.vinyl-btn .vd-sheen{position:absolute;inset:0;border-radius:50%;pointer-events:none;
+  background:conic-gradient(from 30deg,transparent 0 6%,rgba(255,255,255,.30) 11%,transparent 17% 50%,rgba(255,255,255,.22) 61%,transparent 68%)}
+.vinyl-btn .vd-label{position:absolute;left:50%;top:50%;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#f6d4cf,#d69b96 70%,#b97b76);box-shadow:0 0 0 1.5px #c2a46a,inset 0 0 0 3px rgba(255,252,238,.35)}
+.vinyl-btn .vd-spindle{position:absolute;left:50%;top:50%;width:5px;height:5px;margin:-2.5px 0 0 -2.5px;border-radius:50%;background:#fffcee;box-shadow:0 0 0 1px rgba(122,92,44,.7)}
+.vinyl-btn .vd-icons{position:absolute;left:38px;top:46px;width:0;height:0}
+.vinyl-btn .vd-icons svg{position:absolute;left:-7px;top:-7px;width:14px;height:14px;display:block;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}
+.vinyl-btn .vd-icons .pz{display:none}
+.vinyl-btn.is-playing .vd-icons .pl{display:none}.vinyl-btn.is-playing .vd-icons .pz{display:block}
+.vinyl-btn .arm{position:absolute;left:52px;top:-4px;width:40px;height:78px;transform-origin:30px 9px;transform:rotate(-17deg);transition:transform .9s cubic-bezier(.3,.7,.2,1);pointer-events:none;overflow:visible}
+.vinyl-btn.is-playing .arm{transform:rotate(15deg)}
+@media (prefers-reduced-motion:reduce){.vinyl-btn.is-playing .vd-spin{animation:none}.vinyl-btn .arm{transition:none}}
+
 /* ===== 12. Menú flotante minimalista ===== */
 .fab{position:fixed;top:max(14px,env(safe-area-inset-top));right:max(14px,calc(50vw - 215px + 14px));z-index:1200;display:flex;gap:10px;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .8s ease,transform .8s ease}
 .fab.is-ready{opacity:1;transform:none;pointer-events:auto}
@@ -681,9 +708,6 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .menu-nav a{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(24px,7vw,30px);line-height:1.55;color:var(--text);text-decoration:none;padding:4px 18px;min-height:44px;display:flex;align-items:center;opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease,color .3s}
 .menu-panel.is-open .menu-nav a{opacity:1;transform:none}
 .menu-nav a.cur{color:var(--gold-deep);font-style:italic}
-.vinyl-btn{width:44px!important;height:44px!important;left:max(14px,calc(50vw - 215px + 14px));right:auto!important;bottom:max(14px,env(safe-area-inset-bottom))!important}
-.vinyl-tonearm,.vinyl-label-text{display:none}
-.vinyl-btn::after{inset:-4px}
 
 /* ===== tipografía formal (sin Lato) ===== */
 body{font-variant-numeric:lining-nums}
@@ -797,7 +821,7 @@ body{font-variant-numeric:lining-nums}
 
 /* ═══ 6 · LLUVIA DE SOBRES (prefijo lluv-) ═══ */
 #sgifts{position:relative;overflow:hidden;text-align:center}
-#sgifts > *:not(.lluv-rain){position:relative;z-index:1}   /* eyebrow/título encima de la lluvia */
+#sgifts > *:not(.lluv-rain):not(.flor):not(.ink-bg){position:relative;z-index:1}   /* eyebrow/título encima de la lluvia */
 
 /* Lluvia de fondo */
 .lluv-rain{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
@@ -1722,22 +1746,17 @@ body{font-variant-numeric:lining-nums}
 
 <!-- MUSICA — Disco de vinilo flotante -->
 <button class="vinyl-btn" id="music-btn" type="button" aria-label="Reproducir m&uacute;sica de la invitaci&oacute;n">
-  <div class="vinyl-tonearm">
-    <div class="vinyl-tonearm-pivot"></div>
-    <div class="vinyl-tonearm-line"></div>
-    <div class="vinyl-tonearm-head"></div>
-  </div>
-  <div class="vinyl-spin">
-    <div class="vinyl-disc">
-      <div class="vinyl-sheen"></div>
-      <div class="vinyl-label-text">AW</div>
-      <div class="vinyl-hole"></div>
-    </div>
-  </div>
-  <div class="vinyl-icons">
-    <svg class="vinyl-icon-play" viewBox="0 0 24 24" fill="#efc0bc" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-    <svg class="vinyl-icon-pause" viewBox="0 0 24 24" fill="#efc0bc" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-  </div>
+  <span class="vd"><span class="vd-spin"></span><span class="vd-sheen"></span><span class="vd-label"></span><span class="vd-spindle"></span>
+    <span class="vd-icons"><svg class="pl" viewBox="0 0 24 24" fill="#fffcee" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="pz" viewBox="0 0 24 24" fill="#fffcee" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></span>
+  </span>
+  <svg class="arm" viewBox="0 0 40 78" aria-hidden="true">
+    <defs><linearGradient id="armG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8c6d3a"/><stop offset=".5" stop-color="#f1deaa"/><stop offset="1" stop-color="#9b7b42"/></linearGradient></defs>
+    <circle cx="30" cy="9" r="8" fill="#e8dcc0" stroke="#c2a46a" stroke-width="1.5"/><circle cx="30" cy="9" r="3" fill="#8c6d3a"/>
+    <path d="M30 9 L30 56" stroke="#b8975a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M30 56 L24 70" stroke="#b8975a" stroke-width="3" stroke-linecap="round"/>
+    <rect x="19" y="66" width="12" height="7" rx="2" transform="rotate(14 25 69)" fill="#2b211c" stroke="#c2a46a" stroke-width="1"/>
+    <path d="M23.5 72.5 L22 77" stroke="#fffcee" stroke-width="1.2" stroke-linecap="round"/>
+  </svg>
 </button>
 <audio id="bgAudio" loop preload="none">
   <source src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/xv-ariana-wilton/cancion.mp3" type="audio/mpeg">
