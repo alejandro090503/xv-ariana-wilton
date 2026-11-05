@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="hero.webp">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <style>
@@ -59,7 +59,7 @@ body{
 #envelope-screen{
   position:fixed;inset:0;z-index:10000;
   overflow:hidden;cursor:pointer;
-  opacity:0;background:#fbf3f1;
+  opacity:0;background:#fffcee;
 }
 #env-image{
   position:absolute;inset:0;width:100%;height:100%;
@@ -70,7 +70,7 @@ body{
   object-fit:contain;object-position:center;
   z-index:3;opacity:0;
 }
-#env-flash{position:fixed;inset:0;background:#fbf3f1;z-index:9999;opacity:0;pointer-events:none;}
+#env-flash{position:fixed;inset:0;background:#fffcee;z-index:9999;opacity:0;pointer-events:none;}
 .envelope-hint{
   position:absolute;bottom:52px;left:50%;transform:translateX(-50%);
   font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:8px;text-transform:uppercase;
@@ -327,7 +327,7 @@ section > *{position:relative;z-index:1;}
 .btn{
   display:inline-block;margin-top:14px;padding:13px 30px;
   background:linear-gradient(135deg,var(--accent),var(--dark));color:#FFFFFF;border-radius:30px;
-  font-family:'Lato',sans-serif;font-size:11px;font-weight:700;
+  font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:700;
   text-transform:uppercase;letter-spacing:3px;text-decoration:none;
   transition:opacity .3s,transform .3s;border:none;cursor:pointer;
   box-shadow:0 4px 16px rgba(156,175,136,0.32);
@@ -369,7 +369,7 @@ section > *{position:relative;z-index:1;}
 .dc-fig img,.dc-fig svg{width:100%;max-width:148px;height:auto;filter:drop-shadow(0 10px 18px rgba(86,105,74,.20));}
 .dc-fig-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--dark);}
 .dc-avoid{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:26px;}
-.dc-avoid-lbl{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:#7f6232;font-weight:700;}
+.dc-avoid-lbl{font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:#7f6232;font-weight:700;}
 .dc-avoid-sw{display:flex;align-items:center;gap:10px;}
 .dc-avoid-dot{width:30px;height:30px;border-radius:50%;background:#e3cc94;border:1px solid rgba(86,105,74,.25);box-shadow:inset 0 1px 2px rgba(255,255,255,.4);}
 .dc-avoid-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--text);opacity:.8;}
@@ -420,7 +420,7 @@ section > *{position:relative;z-index:1;}
 .env-mailbox-icon{width:40px;height:40px;color:var(--gold);margin-top:10px;}
 .env-title{font-family:'Great Vibes',cursive;font-size:30px;color:var(--dark);letter-spacing:.5px;line-height:1.2;}
 .env-desc{font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;font-weight:500;color:rgba(58,58,48,.72);line-height:1.75;}
-.env-tap-hint{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#7f6232;opacity:.8;margin-top:8px;transition:opacity .3s;text-align:center;width:100%;}
+.env-tap-hint{font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#7f6232;opacity:.8;margin-top:8px;transition:opacity .3s;text-align:center;width:100%;}
 .env-interactive.open~.env-tap-hint{opacity:0;pointer-events:none;}
 
 /* ALBUM */
@@ -466,7 +466,7 @@ section > *{position:relative;z-index:1;}
   width:100%;max-width:360px;margin:0 auto;padding:18px 36px;border-radius:50px;
   border:1.5px solid rgba(156,175,136,.55);
   background:linear-gradient(135deg,#efc0bc 0%,#e6ecdc 100%);
-  font-family:'Lato',sans-serif;font-size:12px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;
+  font-family:'Cormorant Garamond',serif;font-size:12px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;
   color:var(--text);cursor:pointer;min-height:56px;position:relative;overflow:hidden;
   transition:transform .25s,box-shadow .25s;
   box-shadow:0 6px 20px rgba(197,209,179,.55),0 2px 8px rgba(194,164,106,.20);
@@ -493,7 +493,7 @@ section > *{position:relative;z-index:1;}
 #rsvp-feedback{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;font-weight:600;text-align:center;margin:16px auto 0;max-width:340px;line-height:1.5;min-height:18px}
 .rsvp-deadline-jen{
   display:inline-flex;align-items:center;gap:8px;margin-top:22px;
-  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.42em;text-transform:uppercase;
+  font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:.42em;text-transform:uppercase;
   color:#7f6232;padding-left:.4em;font-weight:700;opacity:.9;
 }
 
@@ -501,7 +501,7 @@ section > *{position:relative;z-index:1;}
 footer{padding:50px 20px;text-align:center;}
 footer .fn{font-family:'Great Vibes',cursive;font-size:54px;}
 footer .fd{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--dark);margin-top:6px;}
-footer .credit{margin-top:22px;font-family:'Lato',sans-serif;font-size:10px;letter-spacing:1.5px;color:rgba(58,58,48,0.42);}
+footer .credit{margin-top:22px;font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:1.5px;color:rgba(58,58,48,0.42);}
 footer .credit a{color:inherit;text-decoration:none;}
 
 /* MUSICA — Disco de Vinilo */
@@ -521,7 +521,7 @@ footer .credit a{color:inherit;text-decoration:none;}
 }
 .vinyl-sheen{position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,transparent 30%,rgba(255,255,255,.09) 42%,rgba(255,255,255,.15) 48%,rgba(255,255,255,.09) 54%,transparent 66%);pointer-events:none;}
 .vinyl-label-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Great Vibes',cursive;font-size:11px;color:#efc0bc;text-align:center;line-height:1.1;opacity:.8;pointer-events:none;width:28px;}
-.vinyl-label-text small{font-family:'Lato',sans-serif;font-size:5px;letter-spacing:.15em;display:block;margin-top:1px;opacity:.6}
+.vinyl-label-text small{font-family:'Cormorant Garamond',serif;font-size:5px;letter-spacing:.15em;display:block;margin-top:1px;opacity:.6}
 .vinyl-hole{position:absolute;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%,-50%);border-radius:50%;background:#1a1208;box-shadow:0 0 0 1.5px rgba(194,164,106,.45);}
 .vinyl-icons{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:18px;height:18px;pointer-events:none;z-index:2;}
 .vinyl-icons svg{width:100%;height:100%;display:block}
@@ -573,7 +573,7 @@ footer .fd{color:#fffcee!important}
 footer .credit{color:rgba(255,252,238,.78)!important}
 .eyebrow{font-size:15px}
 .fam2-role,.loc1-label{font-size:13px}
-.cd2-lbl{font-family:'Lato',sans-serif;font-style:normal;font-weight:700;font-size:12px;letter-spacing:.18em;color:var(--dark);opacity:1}
+.cd2-lbl{font-family:'Cormorant Garamond',serif;font-style:normal;font-weight:700;font-size:12px;letter-spacing:.18em;color:var(--dark);opacity:1}
 .btn{font-size:13px;padding:14px 30px}
 .rsvp-deadline-jen{font-size:14px!important;letter-spacing:.2em!important}
 
@@ -584,25 +584,30 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 /* ===== 1. HERO ===== */
 .hero{justify-content:flex-end!important;background:#3b4232!important;overflow:hidden}
 .hero-bg{position:absolute;inset:-12% 0!important;z-index:-3;background:none!important;filter:none!important;overflow:hidden}
-.hero-drift{position:absolute;inset:0;background:url('hero.webp') 50% 28%/cover no-repeat;animation:heroDrift 26s ease-in-out infinite alternate}
-@keyframes heroDrift{0%{transform:translate(-1%,-1.2%) scale(1.02)}100%{transform:translate(1.2%,1%) scale(1.10)}}
+.hero-drift{position:absolute;inset:0;background:url('hero.webp') 50% 28%/cover no-repeat;animation:heroDrift 20s ease-in-out infinite alternate}
+@keyframes heroDrift{0%{transform:translate(-2.2%,-1.8%) scale(1.03)}100%{transform:translate(2.2%,1.8%) scale(1.13)}}
 .hero-shine{position:absolute;inset:0;z-index:-2;mix-blend-mode:soft-light;overflow:hidden;pointer-events:none}
-.hero-shine::before{content:'';position:absolute;top:-25%;bottom:-25%;left:-70%;width:55%;
-  background:linear-gradient(100deg,transparent 0%,rgba(255,250,236,.55) 50%,transparent 100%);
-  transform:translateX(0) rotate(12deg);animation:heroShine 9s ease-in-out infinite}
-@keyframes heroShine{0%{transform:translateX(0) rotate(12deg)}60%,100%{transform:translateX(420%) rotate(12deg)}}
+.hero-shine::before{content:'';position:absolute;top:-30%;bottom:-30%;left:-90%;width:85%;
+  background:linear-gradient(100deg,transparent 0%,rgba(255,236,196,.10) 22%,rgba(255,248,228,.62) 46%,rgba(255,255,255,.85) 50%,rgba(255,244,214,.55) 54%,rgba(255,236,196,.10) 78%,transparent 100%);
+  transform:translateX(0) rotate(14deg);animation:heroShine 11s cubic-bezier(.45,.05,.25,1) infinite}
+.hero-shine::after{content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 45% at 30% 22%,rgba(255,246,224,.55),transparent 70%),radial-gradient(ellipse 50% 35% at 78% 60%,rgba(255,225,205,.35),transparent 70%);
+  animation:heroGlow 7s ease-in-out infinite alternate}
+@keyframes heroShine{0%{transform:translateX(0) rotate(14deg)}55%,100%{transform:translateX(250%) rotate(14deg)}}
+@keyframes heroGlow{0%{opacity:.25}100%{opacity:.85}}
 .hero-veil{z-index:-2!important;background:linear-gradient(to top,rgba(40,46,32,.66) 0%,rgba(40,46,32,.52) 26%,rgba(40,46,32,.2) 42%,rgba(40,46,32,0) 56%)!important}
-.hero-bottom{margin:0!important;padding:0 24px 110px!important}
+.hero-bottom{margin:0!important;padding:0 24px 72px!important}
+#hSb,#hDate,#hCity,#hScroll{display:none!important}
 .hero-eyebrow,.hero-city{color:#fffcee!important;text-shadow:0 1px 10px rgba(0,0,0,.35)!important}
 .hero-eyebrow{font-size:14px!important}
-.hero-city{font-family:'Lato',sans-serif!important;font-style:normal!important;font-weight:700!important;font-size:14px!important;letter-spacing:.24em!important}
-.hero-date-text{font-family:'Lato',sans-serif!important;font-weight:700!important;font-size:16px!important;letter-spacing:.22em!important;color:#fffcee!important;text-shadow:0 1px 10px rgba(0,0,0,.35)!important}
+.hero-city{font-family:'Cormorant Garamond',serif!important;font-style:normal!important;font-weight:700!important;font-size:14px!important;letter-spacing:.24em!important}
+.hero-date-text{font-family:'Cormorant Garamond',serif!important;font-weight:700!important;font-size:16px!important;letter-spacing:.22em!important;color:#fffcee!important;text-shadow:0 1px 10px rgba(0,0,0,.35)!important}
 .hero-date-bar{background:linear-gradient(to right,transparent,#e6d3a6)!important}
 .hero-date-bar:last-child{background:linear-gradient(to left,transparent,#e6d3a6)!important}
 .xv-anos{color:#fffcee!important}
 .hero-name{filter:drop-shadow(0 2px 14px rgba(0,0,0,.35))!important;margin-bottom:4px!important}
 .hero-scroll{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;
-  font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#fffcee;text-shadow:0 1px 8px rgba(0,0,0,.45);z-index:3;opacity:0}
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#fffcee;text-shadow:0 1px 8px rgba(0,0,0,.45);z-index:3;opacity:0}
 .hero-scroll svg{width:18px;height:18px;animation:scrollHint 2.2s ease-in-out infinite}
 @keyframes scrollHint{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(6px);opacity:1}}
 
@@ -625,8 +630,8 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .loc1-pin{position:relative}
 .loc1-pin::after{content:'';position:absolute;inset:-2px;border-radius:50%;border:1.5px solid var(--gold);animation:pinPulse 2.4s ease-out infinite}
 @keyframes pinPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
-.loc1-time{font-family:'Lato',sans-serif!important;font-weight:700!important;font-size:24px!important;letter-spacing:.12em!important}
-.loc1-addr{font-family:'Lato',sans-serif!important;font-style:normal!important;font-size:16px!important;font-weight:400!important;color:var(--text)!important}
+.loc1-time{font-family:'Cormorant Garamond',serif!important;font-weight:700!important;font-size:24px!important;letter-spacing:.12em!important}
+.loc1-addr{font-family:'Cormorant Garamond',serif!important;font-style:normal!important;font-size:16px!important;font-weight:400!important;color:var(--text)!important}
 .fam2{gap:22px!important}
 .fam2-group{border-radius:24px!important}
 
@@ -634,7 +639,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .itv4{position:relative}
 .itv4-line{position:absolute;left:50px;top:30px;bottom:30px;width:1.5px;background:linear-gradient(to bottom,var(--gold),var(--accent),var(--rose));transform-origin:top center;transform:scaleY(0);z-index:0}
 .itv4-card{position:relative;z-index:1}
-.itv4-time{font-family:'Lato',sans-serif!important;font-weight:700!important;font-size:18px!important;letter-spacing:.06em!important;line-height:1.3!important}
+.itv4-time{font-family:'Cormorant Garamond',serif!important;font-weight:700!important;font-size:18px!important;letter-spacing:.06em!important;line-height:1.3!important}
 .itv4-label{font-family:'Cormorant Garamond',serif!important;font-style:normal!important;font-weight:600!important;font-size:21px!important;letter-spacing:.02em!important;text-transform:none!important;color:var(--text)!important;margin-top:2px!important}
 
 /* ===== 10 + 11. Títulos foil con brillo suave ===== */
@@ -650,10 +655,14 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 /* ===== Coquette: moños y flores ===== */
 .bow{display:block;width:74px;height:auto;margin:0 auto -6px;position:relative;z-index:2;pointer-events:none;filter:drop-shadow(0 4px 8px rgba(214,155,150,.25));animation:bowSway 5.5s ease-in-out infinite;transform-origin:50% 20%}
 @keyframes bowSway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
-.flor{position:absolute;pointer-events:none;z-index:0;width:120px;height:auto;opacity:.92;animation:florSway 8s ease-in-out infinite alternate}
-.flor.tl{top:-8px;left:-14px}.flor.tr{top:-8px;right:-14px;transform:scaleX(-1)}
-.flor.bl{bottom:-10px;left:-12px}.flor.br{bottom:-10px;right:-12px}
-@keyframes florSway{0%{rotate:-2deg}100%{rotate:2deg}}
+.flor{position:absolute;pointer-events:none;z-index:0;width:132px;height:auto;opacity:.88;filter:blur(.8px);
+  -webkit-mask-image:radial-gradient(closest-side,#000 58%,transparent 100%);mask-image:radial-gradient(closest-side,#000 58%,transparent 100%);
+  animation:florFloat 8s ease-in-out infinite alternate}
+.flor.back{width:200px;opacity:.5;filter:blur(3px);animation-duration:11s}
+.flor.d2{animation-delay:-3s}.flor.d3{animation-delay:-6s}
+.flor.tl{top:-6px;left:-18px}.flor.tr{top:-6px;right:-18px;transform:scaleX(-1)}
+.flor.bl{bottom:-8px;left:-18px}.flor.br{bottom:-8px;right:-18px;transform:scaleX(-1)}
+@keyframes florFloat{0%{translate:0 0;rotate:-2.5deg}100%{translate:0 -11px;rotate:2.5deg}}
 .cd2-container,.rsvp-card{overflow:visible!important}
 
 /* ===== 12. Menú flotante minimalista ===== */
@@ -675,6 +684,34 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .vinyl-btn{width:44px!important;height:44px!important;left:max(14px,calc(50vw - 215px + 14px));right:auto!important;bottom:max(14px,env(safe-area-inset-bottom))!important}
 .vinyl-tonearm,.vinyl-label-text{display:none}
 .vinyl-btn::after{inset:-4px}
+
+/* ===== tipografía formal (sin Lato) ===== */
+body{font-variant-numeric:lining-nums}
+.btn,.dc5-cap,.dc5-pal-lbl,.cd2-lbl,.loc1-time,.itv4-time,.hero-eyebrow,.rsvp-deadline-jen{font-weight:700!important}
+.btn,.dc5-cap,.dc5-pal-lbl{letter-spacing:.2em!important;font-size:17px!important}
+.loc1-addr{font-weight:600!important;font-size:19px!important}
+.loc1-time{font-size:27px!important;letter-spacing:.06em!important}
+.itv4-time{font-size:21px!important}
+.cd2-lbl{font-size:14px!important;letter-spacing:.14em!important}
+/* ===== dress code: sugeridos en 2 renglones, bolitas chicas ===== */
+.dc5-pals{grid-template-columns:1fr!important;gap:30px!important;max-width:340px!important}
+.dc5-sw{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 8px;margin:0;padding:0;width:100%}
+.dc5-sw li{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.dc5-sw i{display:block;width:44px;height:44px;border-radius:50%;position:relative;border:1.5px solid var(--gold);
+  box-shadow:0 0 0 3px rgba(255,252,238,.9),0 0 0 4px rgba(194,164,106,.55),0 6px 14px rgba(140,109,58,.18)}
+.dc5-sw i::after{content:'';position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.75),transparent 48%)}
+.dc5-sw span{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:15px;line-height:1.2;color:var(--dark)}
+.dc5-orb{width:68px!important;height:68px!important}
+.dc5-badge{width:24px!important;height:24px!important}.dc5-badge svg{width:14px!important;height:14px!important}
+.dc5-name{margin-top:14px!important}
+/* ===== pétalos premium ===== */
+#petals{position:fixed;inset:0;z-index:60;pointer-events:none;overflow:hidden}
+.ptl{position:absolute;top:0;left:0;will-change:transform;animation:ptlFall var(--dur,14s) linear var(--del,0s) forwards}
+.ptl>img{display:block;width:var(--sz,22px);height:auto;filter:drop-shadow(0 3px 4px rgba(150,80,80,.28));animation:ptlTumble var(--tum,5s) ease-in-out infinite alternate;transform-style:preserve-3d}
+.ptl.far>img{filter:blur(1.4px);opacity:.7}
+@keyframes ptlFall{0%{transform:translate3d(var(--x0),-8vh,0)}25%{transform:translate3d(calc(var(--x0) + var(--dx)*.35),24vh,0)}55%{transform:translate3d(calc(var(--x0) + var(--dx)*-.2),58vh,0)}100%{transform:translate3d(calc(var(--x0) + var(--dx)),112vh,0)}}
+@keyframes ptlTumble{0%{transform:rotateX(0) rotateY(-40deg) rotateZ(var(--r0,0deg))}100%{transform:rotateX(70deg) rotateY(55deg) rotateZ(calc(var(--r0,0deg) + 140deg))}}
+@media (prefers-reduced-motion:reduce){#petals{display:none}.flor{animation:none!important}}
 @media (prefers-reduced-motion:reduce){.menu-panel,.menu-nav a,.fab{transition:none}.lev,.bow,.flor,.hero-drift,.hero-shine::before,.ink-bg>i,.loc1-pin::after{animation:none!important}}
 
 /* ═══ 5 · CÓDIGO DE VESTIMENTA (prefijo dc5-) ═══ */
@@ -692,7 +729,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
   user-select:none;-webkit-user-select:none;pointer-events:none}
 .dc5-img--b{animation-delay:-2.8s}
 @keyframes dcSway{0%,100%{transform:rotate(-1.8deg)}50%{transform:rotate(1.8deg)}}
-.dc5-cap{margin-top:14px;font-family:'Lato',sans-serif;font-weight:700;font-size:16px;letter-spacing:2.4px;text-transform:uppercase;color:var(--dark)}
+.dc5-cap{margin-top:14px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;letter-spacing:2.4px;text-transform:uppercase;color:var(--dark)}
 
 .dc5-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:19px;line-height:1.6;color:var(--text);max-width:340px;margin:18px auto 26px}
 .dc5-note strong{font-style:normal;font-weight:700;color:var(--gold-deep)}
@@ -700,7 +737,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 /* Bolitas */
 .dc5-pals{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:360px;margin:0 auto}
 .dc5-pal{display:flex;flex-direction:column;align-items:center}
-.dc5-pal-lbl{font-family:'Lato',sans-serif;font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep);margin-bottom:16px}
+.dc5-pal-lbl{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep);margin-bottom:16px}
 .dc5-pal--no .dc5-pal-lbl{color:#8f3b46}
 
 .dc5-orb{position:relative;width:104px;height:104px;border-radius:50%;margin:0 auto}
@@ -742,13 +779,13 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 /* nombre del color (capas sincronizadas) */
 .dc5-name{position:relative;width:100%;height:24px;margin-top:18px}
 .dc5-name span{position:absolute;left:0;right:0;top:0;opacity:0;white-space:nowrap;will-change:opacity;
-  font-family:'Lato',sans-serif;font-weight:700;font-size:16px;line-height:24px;color:var(--dark)}
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;line-height:24px;color:var(--dark)}
 .dc5-name span:first-child{opacity:1}
 .dc5-pal--no .dc5-name span{color:#7e3540}
 
 /* lista estática (solo prefers-reduced-motion) */
 .dc5-list{display:none;list-style:none;margin:0;padding:0}
-.dc5-list li{display:flex;align-items:center;gap:8px;font-family:'Lato',sans-serif;font-weight:700;font-size:16px;color:var(--text)}
+.dc5-list li{display:flex;align-items:center;gap:8px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;color:var(--text)}
 .dc5-list i{flex:0 0 auto;width:20px;height:20px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(58,58,48,.25),0 2px 5px rgba(58,58,48,.12)}
 
 @media (prefers-reduced-motion:reduce){
@@ -798,7 +835,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 /* "Toca para abrir / cerrar" */
 .lluv-hint{position:relative;z-index:3;display:inline-block;margin:10px auto 0;min-height:44px;padding:8px 18px;
   border:0;background:none;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;
-  font-family:'Lato',sans-serif;font-weight:700;font-size:16px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-deep);
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-deep);
   opacity:0;pointer-events:none;transition:opacity .5s ease}
 .lluv-hint.show{opacity:1;pointer-events:auto;animation:lluvHintPulse 2.4s ease-in-out infinite}
 @keyframes lluvHintPulse{0%,100%{opacity:.6}50%{opacity:1}}
@@ -820,7 +857,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 /* ═══ 8 · GALERÍA CARRUSEL 3D (prefijo gal3-) ═══
    --gal3-veil = color de fondo de la sección (el reflejo se funde hacia él) */
 .gal3{--gal3-veil:#fffcee;--gal3-cw:150px;--gal3-ch:210px;position:relative;text-align:center;margin:8px auto 0;max-width:430px}
-.gal3-scene{position:relative;width:100%;height:calc(var(--gal3-ch) * 1.44 + 34px);perspective:950px;perspective-origin:50% 38%;
+.gal3-scene{position:relative;width:100%;height:calc(var(--gal3-ch) * 1.5 + 48px);perspective:1250px;perspective-origin:50% 38%;
   touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
 .gal3-scene.dragging{cursor:grabbing}
 .gal3-ring{position:absolute;left:50%;top:22px;width:0;height:0;transform-style:preserve-3d;will-change:transform}
@@ -835,7 +872,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .gal3-refl img{position:absolute;left:0;top:0;width:100%;height:calc(var(--gal3-ch) - 8px);object-fit:cover;transform:scaleY(-1)}
 .gal3-refl::after{content:'';position:absolute;inset:-1px;
   background:linear-gradient(to bottom,rgba(255,252,238,.5) 0%,rgba(255,252,238,.82) 38%,var(--gal3-veil) 82%)}
-.gal3-hint{margin-top:2px;font-family:'Lato',sans-serif;font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-deep)}
+.gal3-hint{margin-top:2px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-deep)}
 
 /* Lightbox */
 .gal3-lb{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;padding:56px 12px 64px;
@@ -851,7 +888,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .gal3-lb-x{top:12px;right:12px}
 .gal3-lb-prev{left:8px;top:50%;margin-top:-23px}
 .gal3-lb-next{right:8px;top:50%;margin-top:-23px}
-.gal3-lb-count{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-family:'Lato',sans-serif;font-weight:700;font-size:16px;letter-spacing:2px;color:#fffcee}
+.gal3-lb-count{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;letter-spacing:2px;color:#fffcee}
 
 /* ═══ 9 · RSVP "X pases" (prefijo rsv-) ═══ */
 .rsv-card{position:relative;max-width:400px;margin:30px auto 0;padding:40px 22px 28px;text-align:center;border-radius:22px;
@@ -862,24 +899,24 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
 /* Nombre del invitado: grande, serif, brillo suave */
 .rsv-para{margin:0 0 14px}
-.rsv-para-lbl{display:block;font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep)}
+.rsv-para-lbl{display:block;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep)}
 .rsv-hi{display:block;margin-top:6px;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(28px,8vw,36px);line-height:1.2;
   color:var(--dark);text-shadow:0 0 18px rgba(230,211,166,.95),0 0 2px rgba(255,252,238,.9);overflow-wrap:anywhere}
 
-.rsv-dl{font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:1.5;color:var(--text);margin:4px 0 18px}
+.rsv-dl{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:16px;line-height:1.5;color:var(--text);margin:4px 0 18px}
 .rsv-dl strong{font-weight:700;color:var(--dark)}
 
 /* Recuadros de pases y menores */
 .rsv-boxes{display:flex;justify-content:center;gap:12px;margin:0 0 20px}
 .rsv-box{min-width:110px;padding:12px 16px 10px;display:flex;flex-direction:column;align-items:center;border-radius:16px;
   background:#fffcee;border:1px solid rgba(194,164,106,.65);box-shadow:inset 0 0 0 3px #fffcee,inset 0 0 0 4px rgba(239,192,188,.6)}
-.rsv-box-lbl{font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep)}
+.rsv-box-lbl{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-deep)}
 .rsv-box-num{font-variant-numeric:lining-nums;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:46px;line-height:1.05;color:var(--dark)}
 
 /* Sí / No */
 .rsv-toggle{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .rsv-tbtn{min-height:56px;padding:8px 6px;border-radius:14px;border:1.5px solid rgba(86,105,74,.38);background:#fff;cursor:pointer;
-  font-family:'Lato',sans-serif;font-weight:700;font-size:16px;line-height:1.2;color:var(--text);
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;line-height:1.2;color:var(--text);
   transition:background-color .25s,border-color .25s,color .25s,transform .2s;touch-action:manipulation}
 .rsv-tbtn:active{transform:scale(.97)}
 .rsv-tbtn.is-yes{background:var(--dark);border-color:var(--dark);color:#fffcee}
@@ -891,17 +928,17 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .rsv-cnt-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:18px;line-height:1.5;color:var(--text)}
 .rsv-cnt{display:flex;align-items:center;justify-content:center;gap:20px;margin:10px 0 4px}
 .rsv-cnt-btn{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--gold);background:#fffcee;cursor:pointer;
-  font-family:'Lato',sans-serif;font-weight:700;font-size:24px;line-height:1;color:var(--dark);
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;line-height:1;color:var(--dark);
   display:flex;align-items:center;justify-content:center;transition:transform .2s,background-color .2s;touch-action:manipulation}
 .rsv-cnt-btn:active{transform:scale(.92)}
 .rsv-cnt-btn:disabled{opacity:.38;cursor:not-allowed}
 .rsv-cnt-val{min-width:44px;font-variant-numeric:lining-nums;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:42px;line-height:1;color:var(--dark)}
-.rsv-cnt-foot{font-family:'Lato',sans-serif;font-weight:700;font-size:16px;color:var(--gold-deep)}
+.rsv-cnt-foot{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;color:var(--gold-deep)}
 
 /* Campos de nombre (el JS crea <input class="rsv-input">) */
 .rsv-fields{display:flex;flex-direction:column;gap:10px;margin-top:18px}
 .rsv-input{width:100%;min-height:52px;padding:12px 16px;border-radius:12px;border:1.5px solid rgba(86,105,74,.35);background:#fff;
-  font-family:'Lato',sans-serif;font-weight:400;font-size:17px;color:var(--text);outline:none;-webkit-appearance:none;appearance:none;
+  font-family:'Cormorant Garamond',serif;font-weight:400;font-size:17px;color:var(--text);outline:none;-webkit-appearance:none;appearance:none;
   transition:border-color .2s,box-shadow .2s}
 .rsv-input::placeholder{color:#6f6a5c;opacity:1}
 .rsv-input:focus{border-color:var(--dark);box-shadow:0 0 0 3px rgba(156,175,136,.3)}
@@ -912,7 +949,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 /* Enviar */
 .rsv-send{width:100%;min-height:58px;margin-top:20px;border:none;border-radius:999px;cursor:pointer;
   background:linear-gradient(135deg,var(--dark) 0%,#6d8160 100%);color:#fffcee;
-  font-family:'Lato',sans-serif;font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;
   box-shadow:0 10px 22px rgba(86,105,74,.28),inset 0 0 0 1px rgba(230,211,166,.55);
   animation:rsvBreathe 3.2s ease-in-out infinite;touch-action:manipulation}
 @keyframes rsvBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
@@ -924,11 +961,11 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 .rsv-gracias-title{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:28px;line-height:1.25;color:var(--dark);margin-bottom:8px}
 .rsv-gracias-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:19px;line-height:1.55;color:var(--text);margin-bottom:20px}
 .rsv-edit{min-height:48px;padding:10px 24px;border-radius:999px;border:1.5px solid var(--gold);background:#fffcee;cursor:pointer;
-  font-family:'Lato',sans-serif;font-weight:700;font-size:16px;color:var(--dark);transition:background-color .2s;touch-action:manipulation}
+  font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;color:var(--dark);transition:background-color .2s;touch-action:manipulation}
 .rsv-edit:hover{background:#fdf1ea}
 .rsv-edit:disabled{opacity:.45;cursor:not-allowed}
 
-.rsv-fb{margin-top:14px;min-height:22px;font-family:'Lato',sans-serif;font-weight:700;font-size:16px;line-height:1.45;color:var(--dark)}
+.rsv-fb{margin-top:14px;min-height:22px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:16px;line-height:1.45;color:var(--dark)}
 .rsv-fb:empty{margin-top:0}
 .rsv-fb.err{color:#9b3b4a}
 
@@ -940,7 +977,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
 <!-- ENVELOPE -->
 <div id="envelope-screen" role="button" aria-label="Toca para abrir tu invitacion">
-  <img id="env-image" src="sobre.png" alt="Invitaci&oacute;n XV A&ntilde;os Ariana Carrie">
+  <img id="env-image" src="sobre.jpg" alt="Invitaci&oacute;n XV A&ntilde;os Ariana Carrie">
   <video id="env-video" src="apertura.mp4" playsinline webkit-playsinline muted preload="auto"></video>
   <p class="envelope-hint" id="env-hint">Toca para abrir</p>
 </div>
@@ -1029,6 +1066,8 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- RETRATO — foto de la quinceañera -->
   <section class="portrait-section rv" id="sportrait">
+    <img class="flor back tl " src="deco/flor-2.webp" alt="" aria-hidden="true">
+    <img class="flor  br d2" src="deco/flor-3.webp" alt="" aria-hidden="true">
     <div class="sec-bg-botanica" style="background-image:url('botanica1.png');opacity:.07"></div>
     <div class="eyebrow eyebrow-gold rv">La Festejada</div>
     <img class="bow" src="deco/mono-1.webp" alt="" aria-hidden="true">
@@ -1082,6 +1121,8 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- COUNTDOWN -->
   <section id="scd">
+    <img class="flor back tl " src="deco/flor-1.webp" alt="" aria-hidden="true">
+    <img class="flor  br " src="deco/flor-3.webp" alt="" aria-hidden="true">
     <h2 class="sec-title rv">Cuenta Regresiva</h2>
     <div class="cd2-container">
       <img class="bow" src="deco/mono-2.webp" alt="" aria-hidden="true" style="position:absolute;top:-34px;left:50%;margin-left:-37px">
@@ -1148,6 +1189,8 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- UBICACION — solo recepción (sin ceremonia formal) -->
   <section id="subic" class="on-ink">
+    <img class="flor back bl " src="deco/flor-3.webp" alt="" aria-hidden="true">
+    <img class="flor  tr d2" src="deco/flor-1.webp" alt="" aria-hidden="true">
     <div class="ink-bg oval" style="--ink-o:.7"><i style="background-image:url(ink/ink-oval.webp)"></i></div>
     <div class="eyebrow eyebrow-gold rv">D&oacute;nde celebraremos</div>
     <h2 class="sec-title rv">Recepci&oacute;n</h2>
@@ -1195,6 +1238,8 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- ITINERARIO -->
   <section id="siti" class="on-ink">
+    <img class="flor  tr d3" src="deco/flor-3.webp" alt="" aria-hidden="true">
+    <img class="flor back bl " src="deco/flor-2.webp" alt="" aria-hidden="true">
     <div class="ink-bg" style="--ink-o:.4"><i style="background-image:url(ink/ink-footer.webp)"></i></div>
     <div class="eyebrow eyebrow-gold rv">Programa de la Tarde</div>
     <h2 class="sec-title rv">Itinerario</h2>
@@ -1239,6 +1284,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
   <section id="sdc" class="dc-section on-ink">
     <div class="ink-bg flip" style="--ink-o:.55"><i style="background-image:url(ink/ink-top.webp)"></i></div>
     <img class="flor tr" src="deco/flor-3.webp" alt="" aria-hidden="true">
+    <img class="flor tl" src="deco/flor-3.webp" alt="" aria-hidden="true">
 <!-- ═══ 5 · CÓDIGO DE VESTIMENTA (contenido interno de <section id="sdc">) ═══ -->
 <div class="dc5">
   <h2 class="sec-title">Código de vestimenta</h2>
@@ -1262,36 +1308,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
   <p class="dc5-note">Semi formal con colores pasteles y nada de colores llamativos. Vestimenta puede ser simple pero que cumpla con el reglamento de color. <strong>NO se puede llevar el color rosa pastel.</strong></p>
 
   <div class="dc5-pals">
-    <!-- SUGERIDOS -->
-    <div class="dc5-pal dc5-pal--ok">
-      <p class="dc5-pal-lbl">Sugeridos</p>
-      <div class="dc5-orb" role="img" aria-label="Colores sugeridos: lila rosado, durazno, vainilla, menta, azul cielo y lavanda">
-        <span class="dc5-orb-in">
-          <span class="dc5-layer" style="background:#ffd1f9"></span>
-          <span class="dc5-layer" style="background:#feebd2"></span>
-          <span class="dc5-layer" style="background:#feffd6"></span>
-          <span class="dc5-layer" style="background:#c7f0e3"></span>
-          <span class="dc5-layer" style="background:#c7e9f0"></span>
-          <span class="dc5-layer" style="background:#d4a9fe"></span>
-          <span class="dc5-gloss"></span>
-          <span class="dc5-sweep"></span>
-        </span>
-        <span class="dc5-badge dc5-badge--ok" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 12.5 10 16.5 18 8"/></svg>
-        </span>
-      </div>
-      <p class="dc5-name" aria-hidden="true">
-        <span>Lila rosado</span><span>Durazno</span><span>Vainilla</span><span>Menta</span><span>Azul cielo</span><span>Lavanda</span>
-      </p>
-      <ul class="dc5-list">
-        <li><i style="background:#ffd1f9"></i>Lila rosado</li>
-        <li><i style="background:#feebd2"></i>Durazno</li>
-        <li><i style="background:#feffd6"></i>Vainilla</li>
-        <li><i style="background:#c7f0e3"></i>Menta</li>
-        <li><i style="background:#c7e9f0"></i>Azul cielo</li>
-        <li><i style="background:#d4a9fe"></i>Lavanda</li>
-      </ul>
-    </div>
+    <div class="dc5-pal dc5-pal--ok"><p class="dc5-pal-lbl">Sugeridos</p><ul class="dc5-sw"><li><i style="background:#ffd1f9"></i><span>Lila rosado</span></li><li><i style="background:#feebd2"></i><span>Durazno</span></li><li><i style="background:#feffd6"></i><span>Vainilla</span></li><li><i style="background:#c7f0e3"></i><span>Menta</span></li><li><i style="background:#c7e9f0"></i><span>Azul cielo</span></li><li><i style="background:#d4a9fe"></i><span>Lavanda</span></li></ul></div>
 
     <!-- EVITAR (rosa pastel primero: el cliente lo prohíbe explícitamente) -->
     <div class="dc5-pal dc5-pal--no">
@@ -1349,6 +1366,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- FAMILIA -->
   <section id="sfam" class="on-ink">
+    <img class="flor back br d2" src="deco/flor-1.webp" alt="" aria-hidden="true">
     <div class="ink-bg flip" style="--ink-o:.45"><i style="background-image:url(ink/ink-hero.webp)"></i></div>
     <img class="flor tl" src="deco/flor-2.webp" alt="" aria-hidden="true">
     <div class="eyebrow eyebrow-gold rv">Con la Bendici&oacute;n de</div>
@@ -1390,6 +1408,7 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- GALERIA -->
   <section id="sgal" class="on-ink">
+    <img class="flor back br " src="deco/flor-3.webp" alt="" aria-hidden="true">
     <div class="ink-bg" style="--ink-o:.4"><i style="background-image:url(ink/ink-hero.webp)"></i></div>
     <img class="flor tl" src="deco/flor-1.webp" alt="" aria-hidden="true" style="transform:scaleX(-1) rotate(0deg)">
     <div class="eyebrow eyebrow-gold rv">Momentos</div>
@@ -1443,6 +1462,8 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- MESA DE REGALOS -->
   <section id="sgifts" class="on-ink">
+    <img class="flor  tl d2" src="deco/flor-2.webp" alt="" aria-hidden="true">
+    <img class="flor back br " src="deco/flor-1.webp" alt="" aria-hidden="true">
     <div class="ink-bg oval flip" style="--ink-o:.65"><i style="background-image:url(ink/ink-corner.webp)"></i></div>
     <div class="eyebrow">Con Cari&ntilde;o</div>
     <h2 class="sec-title rv">Lluvia de sobres</h2>
@@ -1578,6 +1599,8 @@ footer .credit{color:rgba(255,252,238,.78)!important}
 
   <!-- RSVP -->
   <section id="srsvp" class="on-ink">
+    <img class="flor  tl d3" src="deco/flor-1.webp" alt="" aria-hidden="true">
+    <img class="flor back br d2" src="deco/flor-3.webp" alt="" aria-hidden="true">
     <div class="ink-bg oval flip" style="--ink-o:.7"><i style="background-image:url(ink/ink-oval.webp)"></i></div>
     <div class="eyebrow eyebrow-silver">Conf&iacute;rmame tu Asistencia</div>
     <h2 class="sec-title rv">R.S.V.P.</h2>
@@ -1753,6 +1776,7 @@ gsap.registerPlugin(ScrollTrigger);
     launchPage();
     var fab=document.getElementById('fab');if(fab)fab.classList.add('is-ready');
     if(window.daisyBurst)setTimeout(function(){window.daisyBurst({count:38});},350);
+    setTimeout(function(){if(window.startPetals)window.startPetals();},2600);
     var audio=document.getElementById('bgAudio');
     if(audio&&!(audio.currentTime>0&&!audio.paused)){
       audio.volume=0;
@@ -2024,6 +2048,23 @@ function initScrollReveal(){
   }
 })();
 
+/* ===== pétalos cayendo ===== */
+window.startPetals=function(){
+  if(window.__petals||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;window.__petals=1;
+  var box=document.createElement('div');box.id='petals';box.setAttribute('aria-hidden','true');document.body.appendChild(box);
+  var N=5,live=0,MAX=13;
+  function spawn(){
+    if(document.hidden||live>=MAX)return;live++;
+    var far=Math.random()<.4,p=document.createElement('div');p.className='ptl'+(far?' far':'');
+    var vw=window.innerWidth,x0=Math.random()*vw,sz=far?12+Math.random()*8:20+Math.random()*16,dur=(far?17:12)+Math.random()*6;
+    p.style.cssText='--x0:'+x0.toFixed(0)+'px;--dx:'+((Math.random()-.5)*160).toFixed(0)+'px;--sz:'+sz.toFixed(0)+'px;--dur:'+dur.toFixed(1)+'s;--tum:'+(3.5+Math.random()*3).toFixed(1)+'s;--r0:'+(Math.random()*360).toFixed(0)+'deg';
+    var im=new Image();im.src='deco/petalo-'+(1+Math.floor(Math.random()*N))+'.webp';im.alt='';p.appendChild(im);box.appendChild(p);
+    setTimeout(function(){p.remove();live--;},dur*1000+300);
+  }
+  for(var i=0;i<7;i++)setTimeout(spawn,i*700);
+  setInterval(spawn,1500);
+};
+
 (function(){try{
 /* ═══ 5 · CÓDIGO DE VESTIMENTA — bolitas que pasan de color con fundido ═══
    Cada color ~2.5 s visible + fundido 1.2 s (ease in-out), en bucle.
@@ -2224,11 +2265,11 @@ function initScrollReveal(){
   /* ── Medidas: radio según el ancho para que 5 fotos no dejen huecos ni se salgan ── */
   function layout(){
     var W = scene.clientWidth || 360;
-    var cw = Math.round(Math.max(120, Math.min(180, W * .42)));
-    var ch = Math.round(cw * 1.4);                                  /* proporción de las fotos (~0.72) */
+    var cw = Math.round(Math.max(150, Math.min(250, W * .6)));
+    var ch = Math.round(cw * 1.38);                                  /* proporción de las fotos (~0.72) */
     var tight = cw / (2 * Math.tan(Math.PI / n));                   /* radio en el que las tarjetas se tocan */
-    R = tight * (n <= 4 ? 1.35 : n === 5 ? 1.22 : 1.12);            /* separación leve entre tarjetas */
-    var maxR = Math.sqrt(Math.max(1, Math.pow(W / 2 - 6, 2) - Math.pow(cw / 2, 2)));
+    R = tight * (n <= 4 ? 1.6 : n === 5 ? 1.5 : 1.3);            /* separación leve entre tarjetas */
+    var maxR = W * .9;
     R = Math.round(Math.min(R, maxR));
     root.style.setProperty('--gal3-cw', cw + 'px');
     root.style.setProperty('--gal3-ch', ch + 'px');
